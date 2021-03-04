@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/3c9e1e7422.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <section class="u-border-top-large">
+    <header class="container app-header">
+      <section class="logo-container">
+       <!--<a href="#" class="u-weight-bold">Expert Management</a>-->
+       <img src="logo.png" alt="logo" class="logo">
+      </section>
+
+    
+      <nav>
+        <ul class="nav">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="ourquizzes.html" class="active">Projects</a>
+          </li>
+          <li>
+            
+            <a href="login.html">Tasks</a>
+          </li>
+          <li>
+            <a href="index.html">Chat</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section class="user-actions">
+        <i></i>
+        <p>
+          Welcome,
+          FirstName LastName!
+            <span class="fas fa-user-circle" style="font-size: 3em; color: #FDA50F;">
+            
+        </span>
+         
+        </p>
+        <a href="login.html">Account Settings</a>
+      </section>
+    </header>
+  </section>
+
+  <main class="container">
+    <section class="card-wrapper">
+
+      <article class="card">
+        <header>
+          <div class="circle">Pinned Tasks</div>
+          <button type="button" class="miniBtn">View all</button>
+          <h1 class="u-weight-bold">P</h1>
+        </header>
+
+        <section>
+          <input type="button" class="tasks">
+          <input type="button" class="tasks">
+          <input type="button" class="tasks">
+
+          <div class="month">
+            <ul>
+              <li class="prev">&#10094;</li>
+              <li class="next">&#10095;</li>
+              <li>March<br><span style="font-size:18px">2021</span></li>
+            </ul>
+          </div>
+          
+          <ul class="weekdays">
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fr</li>
+            <li>Sa</li>
+            <li>Su</li>
+          </ul>
+          
+          <ul class="days">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li><span class="active">10</span></li>
+            <li>11</li>
+            
+          </ul>
+    
+        </section>
+
+        <footer>
+          <button class="u-border-left">Edit pinned tasks</button>
+          <button class="u-bg-primary u-border-right">Favourite</button>
+        </footer>
+      </article>
+
+      <article class="card">
+        <header>
+          <div class="circle">Today's Schedule</div>
+      <!-- <h1 class="u-weight-bold">Create your own quiz!</h1> -->
+      
+    
+        </header>
+
+        <section>
+          <input type="datetime-local" class="date" id="meeting-time"
+          name="meeting-time"> 
+          <input type="text" class="todaysTasks" >
+          <input type="datetime-local" class="date">
+          <input type="text" class="todaysTasks" >
+          <input type="datetime-local" class="date">
+          <input type="text" class="todaysTasks">
+
+        </section>
+
+        <section>
+         <div class="circle">Meetings Scheduled</div>
+         <div class="meetingsContainer">
+          <div class="grid">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+          </div>
+         </div>
+        </section>
+
+        <footer>
+          <button class="u-border-left">More details</button>
+          <button class="u-bg-primary u-border-right">Favourite</button>
+        </footer>
+      </article>
+
+      <article class="card">
+        <header>
+          <div class="circle">Timeline</div>
+          <h1 class="u-weight-bold">TASKS</h1>
+        </header>
+
+        <section>
+         <p class="textTimeline">To Do</p>
+         <input type="text" class="todaysTasks" >
+
+         <p class="textTimeline">In Progress</p>
+         <input type="text" class="todaysTasks" >
+
+         <p class="textTimeline">In review</p>
+         <input type="text" class="todaysTasks" >
+
+         <p class="textTimeline">Done</p>
+         <input type="text" class="todaysTasks" >
+        
+        </section>
+
+
+        <footer>
+          <button class="u-border-left">More details</button class="u-border-left">
+          <button class="u-bg-primary u-border-right">Favourite</button u-border-right>
+        </footer>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+
+</html>

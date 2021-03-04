@@ -1,0 +1,300 @@
+root {
+    --primary-color: lightgreen;
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+  }
+  
+  html,
+  body {
+    font-family: Tahoma, sans-serif;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  .app-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .app-header a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  .container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+
+  
+  .logo {
+    width:7rem;
+  }
+  nav {
+    flex: 3;
+  }
+  
+  .nav {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  .nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #FDA50F;;
+    font-size: x-large;
+    margin-left: 2.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .nav a:hover {
+    background-color: var(--primary-color);
+  }
+
+  .navText{
+      font-style: italic;
+      font-size: large;
+  }
+  
+ 
+
+  .active {
+    background-color: var(--primary-color);
+  }
+  
+  /* main */
+  
+  main {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+  
+ 
+  
+  .user-actions {
+    
+    align-items: center;
+  }
+  
+  .user-actions a {
+    color: var(--primary-color);
+  }
+  
+  .user-actions a:hover {
+    text-decoration: underline;
+  }
+
+  
+  .card-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 26%;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 13px grey;
+  }
+  
+  .card section {
+    margin-bottom: .7rem;
+  }
+  
+  .card footer {
+    display: flex;
+    margin-top: auto;
+  }
+  
+  .card footer button {
+    flex: 1;
+  }
+  
+  .card .circle {
+    display: inline-block;
+    background-color: var(--primary-color);
+    padding: .7rem;
+    font-size: 2rem;
+    font-weight: 100;
+  }
+
+  .miniBtn{
+    color: #FDA50F;
+    font-size: medium;
+    border: none;
+  }
+
+  .tasks{
+    display: flex;
+    width: -webkit-fill-available;
+    margin-bottom: 2rem;
+    height: 3rem;
+    border:1px;
+  }
+
+  ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background:#FDA50F;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #FDA50F;
+  color: white !important
+}
+
+  
+  .u-border-top-large {
+    border-top: 8px solid var(--primary-color);
+  }
+  
+  .u-weight-bold {
+    font-weight: bold;
+  }
+  
+  .u-bg-primary {
+    background-color: var(--primary-color);
+  }
+  
+  .u-border-left {
+    height: 2rem;
+    border: none;
+    color: #FDA50F;
+  }
+  
+  .u-border-right {
+    height: 2rem;
+    border: none;
+    color: #FDA50F;
+    background-color: #eee;
+    margin-left: 5px;
+  }
+  
+.todaysTasks{
+  margin-top: 1rem;
+  background-color: #eee;
+  width: -webkit-fill-available;
+  height: 5rem;
+  border: none;
+}
+.date{
+  height: 2rem;
+  margin-top:1rem;
+
+}
+
+
+.meetingsContainer{
+  margin-left: 3rem;
+  display: inline-block;
+ 
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(2, 80px);
+  grid-gap: 2px;
+}
+
+.cell {
+  
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: #DCDCDC;
+}
+
+.textTimeline{
+  font-size: 1rem;
+    font-weight: 100;
+}
